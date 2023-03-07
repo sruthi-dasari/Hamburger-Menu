@@ -30,11 +30,11 @@
   flex-direction: column;
 }
 
-.pop-up-outer-box {
-  /* border: none; */
+.popup-content {
+  border: none !important;
 }
 
-.pop-up-box {
+.links-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +63,12 @@
 .trigger-button {
   background: transparent;
   border: none;
+  align-self: flex-end;
+}
+
+.popup-outer-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .close-icon {
