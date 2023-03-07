@@ -40,10 +40,10 @@ const Header = () => {
             </button>
           }
           overlayStyle={overlayStyles}
-          className="pop-up-outer-box"
+          className="popup-content"
         >
           {close => (
-            <>
+            <div className="popup-outer-box">
               <button
                 type="button"
                 className="trigger-button"
@@ -52,21 +52,29 @@ const Header = () => {
               >
                 <IoMdClose className="close-icon" />
               </button>
-              <ul className="pop-up-box">
-                <Link to="/" className="home-about-link">
+              <ul className="links-box">
+                <Link
+                  to="/"
+                  className="home-about-link"
+                  onClick={() => close()}
+                >
                   <li className="box-container">
                     <AiFillHome className="home-about-icon" />
                     <h1 className="home-about-text">Home</h1>
                   </li>
                 </Link>
-                <Link to="/about" className="home-about-link">
+                <Link
+                  to="/about"
+                  className="home-about-link"
+                  onClick={() => close()}
+                >
                   <li className="box-container">
                     <BsInfoCircleFill className="home-about-icon" />
                     <h1 className="home-about-text">About</h1>
                   </li>
                 </Link>
               </ul>
-            </>
+            </div>
           )}
         </Popup>
       </div>
