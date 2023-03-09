@@ -32,6 +32,7 @@
 
 .popup-content {
   border: none !important;
+  width: 100% !important;
 }
 
 .links-box {
@@ -64,11 +65,15 @@
   background: transparent;
   border: none;
   align-self: flex-end;
+  position: absolute;
+  top: 0;
 }
 
 .popup-outer-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .close-icon {
